@@ -4,7 +4,7 @@ export const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZjYwZjAwZjIwZDdkNGRlOGJmMzZkYmQ3ZDQxNGJjNCIsIm5iZiI6MTczNzA0MTgwNi4xODUsInN1YiI6IjY3ODkyNzhlMWQ0YzkxZjZhYzk3N2YyZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bqliV8yZsBPam0WorOKTXxsGwnYID2UfZdGaz1uvtWE'
+      Authorization: 'Bearer ' + import.meta.env.VITE_TMDB_KEY
     }
   };
 
@@ -13,3 +13,4 @@ export const bgImg="https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451
 export const supportedLanguages=[{identifier:"en",name:"English"},{identifier:"hindi",name:"Hindi"},
   {identifier:"spanish",name:"Spanish"}
 ]
+export const OPENAI_KEY=import.meta.env.VITE_OPENAI_KEY;

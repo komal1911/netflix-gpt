@@ -46,6 +46,15 @@ UsePopulars Movie Custom Hook.
 GPT Search Page.
 GPT Search bar.
 Multi-language feature in our app.
+Get Open AI API Key.
+GPT Search API Call.
+Fetched gpt movie suggestions.
+Created GPT Slice added data.
+Reused movie list component to make movie suggestion container.
+Memoization.
+Added .env file to gitignore.
+Made our site responsive.
+
  
 #Features
 -Login/ Sign up
