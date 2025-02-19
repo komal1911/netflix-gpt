@@ -78,13 +78,13 @@ else{
     <div>
         <Header/>
       <div className='absolute'>
-      <img className='h-screen object-cover' src={bgImg} alt="bg_img"
+      <img className='h-screen object-cover w-screen' src={bgImg} alt="bg_img"
         />
       </div>
       <div>
-      <form onSubmit={(e)=>e.preventDefault()} className='absolute w-full md:w-3/12 p-12 bg-black my-36 mx-auto right-0 left-0 text-white'>
+      <form onSubmit={(e)=>e.preventDefault()} className='absolute w-full md:w-3/12 p-12 bg-black bg-opacity-80 my-36 mx-auto right-0 left-0 text-white'>
       <h1 className='font-bold text-3xl py-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
-        <input ref={email} type='text' placeholder='Email or mobile number' className='p-2 m-2 w-full bg-gray-700'/>
+        <input ref={email} type='text' placeholder='Enter your email address' className='p-2 m-2 w-full bg-gray-700'/>
         {!isSignInForm && <input type='name' placeholder='Name' ref={name} className='p-2 m-2 w-full bg-gray-700'/>}
         <input ref={password} type='password' placeholder='Password' className='p-2 m-2 w-full bg-gray-700 '/>
         <p className='text-red-500 py-4 text-lg'>{errorMessage}</p>
